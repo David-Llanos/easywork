@@ -33,7 +33,7 @@ output = html.Div(id = 'output',
                 children = [],
                 )
 
-def App():
+def gestionAdministrativa():
     layout = html.Div([
         nav,
         header,

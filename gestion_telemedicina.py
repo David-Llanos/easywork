@@ -12,7 +12,7 @@ body = dbc.Container(
            [
                dbc.Col(
                   [
-                     html.H2("Heading"),
+                     html.H2("Gestión telemedicina"),
                      html.P(
                          """\
                             Donec id elit non mi porta gravida at eget metus.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentumnibh,\n
@@ -38,7 +38,7 @@ body = dbc.Container(
 className="mt-4",
 )
 
-def Homepage():
+def gestionTelemedicina():
     layout = html.Div([
     nav,
     body
@@ -46,8 +46,7 @@ def Homepage():
     return layout
 
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.UNITED])
-app.layout = Homepage()
+app.layout = gestionTelemedicina()
 if __name__ == "__main__":
     app.run_server()
-
 
